@@ -1,0 +1,69 @@
+
+Kubernetes are two types
+1.self managed (it is implemented by scratch)
+2.Cloud managed (most of the things given by cloud platform)
+
+AKS--Azore Kubernetes Service
+EKS--Amazon Kubernetes service
+GKS--Google Kubernetes Service
+
+What is Kubernetes used for?
+---------------------------
+>>Kubernetes keeps track of your container applications that are deployed into the cloud.
+>>It restarts stoped(orphaned) containers, shuts down containers when they’re not being used, and automatically provisions resources like memory, storage, and CPU when necessary.
+
+How does Kubernetes work with Docker?
+------------------------------------
+>>Actually, Kubernetes supports several base container engines, and Docker is just one of them.
+>>The two technologies work great together, since Docker containers are an efficient way to distribute packaged applications, and Kubernetes is designed to coordinate and schedule those applications.
+
+Kubernetes:(It is also known as K8S)
+----------
+>>It is addon of docker.
+>>open-source platform for managing containerized workloads and services.
+>>It is managing conatinors.
+
+Cluster:
+-------
+>>A cluster is all of the  components put together as a single unit.
+
+Control plane:
+
+Pods:
+----
+>> It is nothing but group of containers.
+>> Inside posd having containers.
+>> Pods have a single IP address that is applied to every container within the pod.
+
+Control plane:
+-------------
+Api server:
+---------
+>>The API (application programming interface) server determines if a request is valid and then processes it.
+
+Scheduler:
+--------
+>>The scheduler is responsible for assigning work to the various nodes.
+>>It keeps watch over the resource capacity and ensures that a worker node’s performance.
+
+Controller manager:
+------------------
+>>The controller-manager is responsible for making sure that the shared state of the cluster is operating as expected.Eg:(If a node goes down).
+
+
+Worker node components:
+
+Kubelet:
+-------
+>>A Kubelet tracks the state of a pod to ensure that all the containers are running.
+>>It provides a heartbeat message every few seconds to the control plane.
+>>If a replication controller does not receive that message, the node is marked as unhealthy.
+
+Kube proxy:
+----------
+>>The Kube proxy routes traffic coming into a node from the service. It forwards requests for work to the correct containers.
+
+etcd:
+----
+>>etcd is a distributed key-value store that Kubernetes uses to share information about the overall state of a cluster.
+>>nodes can refer to the global configuration data stored there to set themselves up whenever they are regenerated.
