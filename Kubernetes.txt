@@ -61,6 +61,7 @@ Kubelet:
 
 Kube proxy:
 ----------
+>>Kube proxy is network proxy thats run on each node in your cluster.implementing the part of git Kubernetes.
 >>The Kube proxy routes traffic coming into a node from the service. It forwards requests for work to the correct containers.
 
 etcd:
