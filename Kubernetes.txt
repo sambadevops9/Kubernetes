@@ -1,3 +1,11 @@
+Api Server port--6443
+kubelet api port--10250
+kube-scheduler port --10251
+kube-controler-manager--10252
+Readonly kubelet-api port--10255
+etcd server client api port---2379-2380
+node port range---30000-32767
+
 
 Kubernetes are two types
 1.self managed (it is implemented by scratch)
