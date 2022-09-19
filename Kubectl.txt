@@ -1,0 +1,9 @@
+kubectl config get-contexts
+kubectl config use-context <add name of cluster>
+kubectl edit deploy dxt1-rest-sprboot-deployment -n dxt1-dev
+kubectl scale deployment dxt1-rset-sprboot-deployment --replication=3/0 -n dxt1-dev
+kubectl get pods -n dafo-dev
+kubectl exec -it dafo-ant-deployment-35fg78fhyeb77-e66bsyu sh -n dafo-dev -c dafo-ant
+kubectl exec -it dafo-ant-deployment-35fg78fhyeb77-e66bsyu -n dafo-dev -c dafo-ant /bin/bash
+kubectl edit deployment -n dafo-dev
+kubectl logs dafo-ant-deployment-35fg78fhyeb77-e66bsyu sh -n dafo-dev -c dafo-ant > dafo-dev.txt
